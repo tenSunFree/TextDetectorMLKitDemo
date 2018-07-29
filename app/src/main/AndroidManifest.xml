@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.textdetectormlkitdemo">
+
+    <!--
+    android:name="android.hardware.camera", 指定android程序需要摄像头功能
+    android:required="true", 为ture时表示该功能对于app来说是必须有的, 如果某一设备不具备该功能, googlePlay商店将会对该设备隐藏该app; 为false时表示该功能对于app来说时非必需的, 即使某一设备不具备该功能, googlePlay商店仍然会对该设备显示该app
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
